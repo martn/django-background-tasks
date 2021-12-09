@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from StringIO import StringIO
+
 from datetime import timedelta
 from hashlib import sha1
 import json
@@ -14,7 +14,7 @@ from django.contrib.contenttypes.models import ContentType
 from django.db import models
 from django.db.models import Q
 from django.utils import timezone
-from six import python_2_unicode_compatible
+from six import python_2_unicode_compatible, StringIO
 
 from background_task.exceptions import InvalidTaskError
 from background_task.settings import app_settings
