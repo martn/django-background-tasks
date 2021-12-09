@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from StringIO import StringIO
 from datetime import timedelta
 from hashlib import sha1
 import json
@@ -6,8 +7,9 @@ import logging
 import os
 import traceback
 
-from compat import StringIO
-from compat.models import GenericForeignKey
+# from compat import StringIO
+# from compat.models import GenericForeignKey
+from django.contrib.contenttypes.fields import GenericForeignKey
 from django.contrib.contenttypes.models import ContentType
 from django.db import models
 from django.db.models import Q
